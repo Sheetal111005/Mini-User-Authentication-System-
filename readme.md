@@ -1,20 +1,27 @@
-# Voting System in C
+# User Registration and Authentication System in C
 
-This project implements a basic voting system in C, where candidates can be added dynamically, and votes are recorded for each candidate. A registration process also creates a `pass.csv` file to store hashed passwords securely.
+This project implements a simple user registration and login system in C. The program allows users to sign up with a unique username and password, which is then stored securely by hashing the password and saving it in a `pass.csv` file. The login functionality validates the user's credentials by checking against the hashed password stored in `pass.csv`.
 
 ## Features
 
-- **Dynamic candidate addition**: Use linked lists to manage candidates, allowing flexible additions.
-- **Vote counter**: Each candidate has a vote counter that can be updated when a vote is cast.
-- **Secure Registration**: A `pass.csv` file is generated during registration, storing hashed passwords.
+- **User Registration**: Users can register with a unique username and password.
+- **Password Hashing**: Passwords are hashed before storing them in `pass.csv` to enhance security.
+- **User Login**: Users can log in by entering a valid username and password, which are then verified.
+- **Error Handling**: Checks for file access errors and duplicate usernames to prevent issues during registration.
 
 ## Code Structure
 
-The main code uses a `Node` struct to represent each candidate in the voting system, with fields for the candidate's name, vote count, and a pointer to the next candidate.
+The main functionality is implemented in functions that handle password hashing, registration, login, and user credential verification.
 
-### Functions
+### Key Functions
 
-- **`insert`**: Adds a new candidate to the voting system with an initial vote count of 0. If this is the first candidate, it is set as the head of the linked list.
+- **`hashPass`**: Takes a password as input and returns a hashed version of it for secure storage.
+- **`signup`**: Allows a new user to register. It checks for duplicate usernames, hashes the password, and writes the username and hashed password to `pass.csv`.
+- **`checkUsername`**: Checks if a username already exists in the `pass.csv` file.
+- **`checkPassword`**: Compares the hashed input password with the stored hashed password for a given username.
+- **`login`**: Allows a user to log in by verifying the entered username and password.
+
+
 
 ### Set Up
 
