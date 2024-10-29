@@ -23,9 +23,17 @@ The main functionality is implemented in functions that handle password hashing,
 
 
 
-### Set Up
+## Set Up
 
-- Place both files in same folder
-- Run follwing commands
-- gcc file.c
-- ./a.exe or ./aout (as per OS)
+### Prerequisites
+
+- Ensure you have a C compiler installed (e.g., GCC).
+- If you are using Windows, you may want to install an IDE like Code::Blocks or MinGW for easier compilation.
+
+### Installation Steps
+
+1. **Clone the Repository** (if applicable):
+   ```bash
+   git clone https://github.com/yourusername/user-authentication-system.git
+   cd user-authentication-system
+
