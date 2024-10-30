@@ -34,6 +34,6 @@ The main functionality is implemented in functions that handle password hashing,
 
 1. **Clone the Repository** (if applicable):
    ```bash
-   git clone https://github.com/yourusername/user-authentication-system.git](https://github.com/Sheetal111005/Mini-User-Authentication-System-
+   git clone https://github.com/Sheetal111005/Mini-User-Authentication-System-
    cd user-authentication-system
 
